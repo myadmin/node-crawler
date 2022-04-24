@@ -33,7 +33,7 @@ const load = async (skip = 0) => {
         });
     await downloadFile2(data)
     await sleep(3000)
-    if (skip < 1000) {
+    if (skip < 30) {
         load(skip + 30)
     } else {
         console.log('下载完成')
